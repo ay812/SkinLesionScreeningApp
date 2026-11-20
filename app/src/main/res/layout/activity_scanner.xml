@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Skin Lesion Screening"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1E293B"/>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="#E2E8F0"
+        android:src="@drawable/ic_camera"
+        android:padding="60dp"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Selected Image" />
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Select Image from Gallery"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#0284C7"/>
+
+    <Button
+        android:id="@+id/btnPredict"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Run AI Analysis"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#059669"/>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result: Please select an image to analyze."
+        android:textSize="16sp"
+        android:textColor="#334155"
+        android:textStyle="bold"/>
+
+</LinearLayout>
